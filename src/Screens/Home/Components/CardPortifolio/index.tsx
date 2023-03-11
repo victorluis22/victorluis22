@@ -1,14 +1,15 @@
 import React from 'react'
 import { 
     Container,
-    Image,
     ImagesContainer,
     LowerContainer,
     IconsContainer,
     Text,
     Icons,
     Link,
-    Card
+    Card,
+    ImagePhone,
+    ImageMac
 } from './style'
 
 interface PortifolioProps{
@@ -28,8 +29,8 @@ const CardPortifolio: React.FC<PortifolioProps> = ({projectName, macImage, iPhon
     <Container backgroundStyle={radialBackground}>
       <Card>
         <ImagesContainer>
-          <Image src={macImage} alt={`Imagem do projeto ${projectName} em um Mac`} />
-          <Image src={iPhoneImage} alt={`Imagem do projeto ${projectName} em um iPhone`}/>
+          <ImageMac src={macImage} alt={`Imagem do projeto ${projectName} em um Mac`} />
+          <ImagePhone src={iPhoneImage} alt={`Imagem do projeto ${projectName} em um iPhone`}/>
         </ImagesContainer>
 
         <Text>{description}</Text>

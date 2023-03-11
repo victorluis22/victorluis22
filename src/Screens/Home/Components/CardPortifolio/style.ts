@@ -34,12 +34,26 @@ export const ImagesContainer = styled.div`
     width: 80%;
 `;
 
-export const Image = styled.img`
-    width: 250px;
-    height: 250px;
+export const ImageMac = styled.img`
+    width: 300px;
+
+    
+    @media screen and (max-width: ${width.tablet}px) {    
+        width: 200px;
+    }
+    @media screen and (max-width: ${width.mobile}px) {    
+        width: 150px;
+    }
+`;
+
+export const ImagePhone = styled.img`
+    width: 150px;
+
     @media screen and (max-width: ${width.tablet}px) {    
         width: 120px;
-        height: 120px;
+    }
+    @media screen and (max-width: ${width.mobile}px) {    
+        width: 100px;
     }
 `;
 

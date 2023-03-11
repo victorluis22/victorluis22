@@ -8,41 +8,46 @@
     --medium: 24px;
     --large: 36px;
     --extra-large: 64px;
-  }
+}
     
-  @font-face {
-    font-family: 'SF Pro';
-    src: local('SF Pro'), url(./assets/fonts/SF-Pro.ttf) format('truetype');
-  }
+@font-face {
+  font-family: 'SF Pro';
+  src: local('SF Pro'), url(./assets/fonts/SF-Pro.ttf) format('truetype');
+}
+
+body{
+  margin: 0;
+  font-family: 'SF Pro', sans-serif;
+  font-size: var(--medium);
+}
+
+p{
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+
   
-  body{
-    margin: 0;
-    font-family: 'SF Pro', sans-serif;
-    font-size: var(--medium);
-  }
+}
   
-  p{
-    margin: 0;
-  }
-  
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  
-    
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Bootstrap Carousel indicators */
+.carousel-indicators { 
+  visibility: hidden; 
+}

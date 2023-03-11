@@ -1,11 +1,11 @@
-import cervejelasiPhone from '../assets/images/cervejelasiPhone.svg'
-import cervejelasMac from '../assets/images/cervejelasMac.svg'
-import serraiPhone from '../assets/images/serraiPhone.svg'
-import serraMac from '../assets/images/serraMac.svg'
-import odsiPhone from '../assets/images/odsiPhone.svg'
-import odsMac from '../assets/images/odsMac.svg'
-import etarserraiPhone from '../assets/images/etarserraiPhone.svg'
-import etarserraMac from '../assets/images/etarserraMac.svg'
+import cervejelasiPhone from '../assets/images/cervejelasiPhone.png'
+import cervejelasMac from '../assets/images/cervejelasMac.png'
+import serraiPhone from '../assets/images/serraiPhone.png'
+import serraMac from '../assets/images/serraMac.png'
+import odsiPhone from '../assets/images/odsiPhone.png'
+import odsMac from '../assets/images/odsMac.png'
+import etarserraiPhone from '../assets/images/etarserraiPhone.png'
+import etarserraMac from '../assets/images/etarserraMac.png'
 
 
 export const cardsData = [
