@@ -8,6 +8,8 @@
     --medium: 24px;
     --large: 36px;
     --extra-large: 64px;
+
+    scroll-behavior: smooth;
 }
     
 @font-face {
@@ -32,9 +34,7 @@ p{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-
-  
+  background: #f1f1f1;   
 }
   
 /* Handle */

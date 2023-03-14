@@ -10,7 +10,7 @@ import MobileHeader from '../../Components/MobileHeader'
 const Banner: React.FC = () => {
 
   return (
-    <Container>
+    <Container id='banner'>
       <MobileHeader />
       <Header />
       <Avatar />

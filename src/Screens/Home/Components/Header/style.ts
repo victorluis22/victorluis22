@@ -13,10 +13,12 @@ export const Container = styled.nav`
     }
 `;
 
-export const Text = styled.p`
+export const Text = styled.a`
     font-weight: 300;
     font-size: var(--medium);
     margin: 20px 15px;
+    text-decoration: none;
+    color: var(--white);
     cursor: pointer;
 
     &:hover{
