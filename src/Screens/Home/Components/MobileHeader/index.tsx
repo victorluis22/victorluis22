@@ -21,10 +21,10 @@ const MobileHeader: React.FC = () => {
       </Logo>
 
       <Menu statusVisible={isVisible}>
-        <Text>Sobre</Text>
-        <Text>Experiência</Text>
-        <Text>Portifólio</Text>
-        <Text>Contato</Text>
+        <Text href='#about'>Sobre</Text>
+        <Text href='#experience'>Experiência</Text>
+        <Text href='#portifolio'>Portifólio</Text>
+        <Text href='#banner'>Contato</Text>
       </Menu>
     </Container>
   )

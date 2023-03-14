@@ -16,11 +16,13 @@ export const Container = styled.nav`
     }
 `;
 
-export const Text = styled.p`
+export const Text = styled.a`
     font-weight: 300;
     font-size: var(--medium);
     margin: 20px 15px;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
 
     &:hover{
         opacity: 0.7;
