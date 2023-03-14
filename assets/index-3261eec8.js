@@ -139,11 +139,13 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: ${Ne.notebook+1}px) {    
         display: none;
     }
-`,No=Q.p`
+`,No=Q.a`
     font-weight: 300;
     font-size: var(--medium);
     margin: 20px 15px;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
 
     &:hover{
         opacity: 0.7;
@@ -175,7 +177,7 @@ Error generating stack: `+i.message+`
     -webkit-backdrop-filter: blur(0px);
 
     
-`,Z0=()=>{const[e,t]=$.useState(!1);return _e(G0,{children:[O(X0,{onClick:()=>t(!e),children:e?O(j0,{size:40}):O(W0,{size:40})}),_e(J0,{statusVisible:e,children:[O(No,{children:"Sobre"}),O(No,{children:"Experiência"}),O(No,{children:"Portifólio"}),O(No,{children:"Contato"})]})]})},q0=()=>_e(R0,{id:"banner",children:[O(Z0,{}),O(Y0,{}),O(Q0,{})]}),b0=Q.div`
+`,Z0=()=>{const[e,t]=$.useState(!1);return _e(G0,{children:[O(X0,{onClick:()=>t(!e),children:e?O(j0,{size:40}):O(W0,{size:40})}),_e(J0,{statusVisible:e,children:[O(No,{href:"#about",children:"Sobre"}),O(No,{href:"#experience",children:"Experiência"}),O(No,{href:"#portifolio",children:"Portifólio"}),O(No,{href:"#banner",children:"Contato"})]})]})},q0=()=>_e(R0,{id:"banner",children:[O(Z0,{}),O(Y0,{}),O(Q0,{})]}),b0=Q.div`
     width: 100%;
     display: flex;
     align-items: center;
