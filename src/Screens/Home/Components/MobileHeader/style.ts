@@ -48,6 +48,10 @@ interface MenuProps{
 }
 
 export const Menu = styled.nav<MenuProps>`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
     top: 80px;
     transition: 0.2s;
