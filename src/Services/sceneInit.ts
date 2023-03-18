@@ -18,25 +18,35 @@ export default class SceneInit {
     width: number;
     height: number;
     backgroundColor: string;
+    showStats: boolean;
+    allowMovement: boolean;
 
-  constructor(canvasId: string) {
+  constructor(
+    canvasId: string, 
+    width: number | null | undefined, 
+    height: number | null | undefined, 
+    showStats: boolean | null | undefined,
+    allowMovement: boolean | null | undefined,
+  ) {
     // NOTE: Core components to initialize Three.js app.
     this.scene = undefined;
     this.camera = undefined;
     this.renderer = undefined;
-    this.backgroundColor = '#fff'
+    this.backgroundColor = '#fff';
 
     // NOTE: Camera params;
     this.fov = 45;
     this.nearPlane = 1;
     this.farPlane = 1000;
     this.canvasId = canvasId;
-    this.width = 400; // window.innerWidth
-    this.height = 200; // window.innerHeight
+    this.width = width ?? window.innerWidth
+    this.height = height ?? window.innerHeight
 
     // NOTE: Additional components.
     this.clock = undefined;
     this.stats = undefined;
+    this.showStats = showStats ?? false;
+    this.allowMovement = allowMovement ?? false;
     this.controls = undefined;
 
     // NOTE: Lighting is basically required.
@@ -68,9 +78,15 @@ export default class SceneInit {
     // document.body.appendChild(this.renderer.domElement);
 
     this.clock = new THREE.Clock();
-    // this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.stats = Stats();
-    document.body.appendChild(this.stats.dom);
+
+    if(this.allowMovement) {
+      this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    }
+    
+    if(this.showStats){
+      this.stats = Stats();
+      document.body.appendChild(this.stats.dom);
+    }
 
     // ambient light which is for the whole scene
     this.ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
@@ -103,8 +119,14 @@ export default class SceneInit {
     // requestAnimationFrame(this.animate.bind(this));
     window.requestAnimationFrame(this.animate.bind(this));
     this.render();
-    this.stats.update();
-    // this.controls.update();
+
+    if(this.showStats){
+      this.stats.update();
+    }
+    if(this.allowMovement){
+      this.controls.update();
+    }
+    
   }
 
   render() {

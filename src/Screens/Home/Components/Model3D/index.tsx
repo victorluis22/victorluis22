@@ -6,13 +6,18 @@ import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 
 import SceneInit from "../../../../Services/sceneInit";
 
-// @ts-ignore
-import computer from '../../../../assets/models/oldComputer/scene.gltf'
+interface ModelProps {
+  width?: number | null | undefined,
+  height?: number | null | undefined,
+  model: string,
+  allowMoviment?: boolean | null | undefined,
+  showStat?: boolean | null | undefined
+}
 
-const RotatingPc: React.FC = () => {
+const Model3D: React.FC<ModelProps> = ({width, height, model, allowMoviment, showStat}) => {
 
   useEffect(() => {
-    const main = new SceneInit('mainCanvas');
+    const main = new SceneInit('mainCanvas', width, height, showStat, allowMoviment);
     main.initialize()
     main.animate()
     // const axesHelper = new THREE.AxesHelper( 10 );
@@ -20,7 +25,7 @@ const RotatingPc: React.FC = () => {
 
     const loader = new GLTFLoader();
     let loadedModel: GLTF | false;
-    loader.load( computer, function ( gltf ) {
+    loader.load( model, function ( gltf ) {
       loadedModel = gltf
       gltf.scene.rotation.y = 5
       gltf.scene.scale.set(5, 5, 5)
@@ -50,4 +55,4 @@ const RotatingPc: React.FC = () => {
   )
 }
 
-export default RotatingPc;
+export default Model3D;

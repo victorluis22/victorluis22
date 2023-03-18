@@ -1,13 +1,16 @@
 import React from "react";
-import { Container, Text } from "./style";
-import RotatingPc from "../../Components/RotatingPc";
+import { Container, Text, Wrapper } from "./style";
+import ContactBadges from "../../Components/ContactBadges";
+
 
 
 const Footer: React.FC = () => {
     return(
         <Container>
-            <RotatingPc />
-            <Text>Copyright © 2023 Victor. All Rights Reserved.</Text>
+            <Wrapper>
+                <ContactBadges />
+                <Text>Copyright © 2023 Victor. All Rights Reserved.</Text>
+            </Wrapper>
         </Container>
     )
 }
