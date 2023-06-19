@@ -64,7 +64,7 @@ export const cardsData = [
         'Express',
         'MongoDB'
       ],
-      url:"https://silly-wisp-3059ab.netlify.app/",
+      url:"https://odsquiz.netlify.app/",
       radialBackground: `background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #8E8E8E 25%, #2D2D2D 60.42%, #191919 69.79%, #000000 100%);
       box-shadow: 5px 10px 10px 9px rgba(0, 0, 0, 0.25);`
   },
