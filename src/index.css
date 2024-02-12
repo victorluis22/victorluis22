@@ -9,7 +9,7 @@
     --large: 36px;
     --extra-large: 64px;
 
-    scroll-behavior: smooth;
+    --max-width: 1300px;
 }
     
 @font-face {
@@ -21,6 +21,7 @@ body{
   margin: 0;
   font-family: 'SF Pro', sans-serif;
   font-size: var(--medium);
+  scroll-behavior: smooth;
 }
 
 p{

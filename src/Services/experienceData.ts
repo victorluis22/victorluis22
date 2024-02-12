@@ -4,21 +4,30 @@ import serraHackLogo from '../assets/images/serraHackclub.svg'
 
 export const experienceData = [
     {
+        id: 0,
         image: uerjLogo,
-        title: 'Monitor de Introdução à Programação - IPRJ/UERJ',
-        subTitle: 'Jun 2022 - Fev 2023',
-        text: 'Auxiliei na elaboração de materiais de estudo e ministrei aulas para tirar dúvidas.'
+        role: 'Monitor de Introdução à Programação',
+        institution: 'IPRJ/UERJ',
+        start: 'Jun 2022',
+        finish: 'Fev 2023',
+        description: 'Auxiliei na elaboração de materiais de estudo e ministrei aulas para tirar dúvidas.'
     },
-    {
+    {   
+        id: 1,
         image: serraLogo,
-        title: 'Assesor de Computação - Serra Jr. Engenharia',
-        subTitle: 'Jun 2022 - Momento',
-        text: 'Supervisionei projetos da empresa e ajudei no treinamento de novos membros.'
+        role: 'Assesor de Computação',
+        institution: 'Serra Jr. Engenharia',
+        start: 'Jun 2022',
+        finish: 'Maio 2023',
+        description: 'Supervisionei projetos da empresa e ajudei no treinamento de novos membros.'
     },
     {
+        id: 2,
         image: serraHackLogo,
-        title: 'Competições - Serra Hackclub Ago 2022 - Momento',
-        subTitle: 'Ago 2022 - Momento',
-        text: 'Faço parte de um grupo que compete em Hackatons de programação.'
+        role: 'Competições',
+        institution: 'Serra Hackclub',
+        start: 'Ago 2022',
+        finish: 'Momento',
+        description: 'Faço parte de um grupo que compete em Hackatons de programação.'
     }
 ]
