@@ -8,6 +8,7 @@ import About from '../Template/About'
 import Experience from '../Template/Experience'
 import Portifolio from '../Template/Portifolio'
 import Footer from '../Template/Footer'
+import Tecnologies from '../Template/Tecnologies'
 
 
 const Home: React.FC = () => {
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
     <Container>
       <Banner />
       <About />
+      <Tecnologies />
       <Experience />
       <Portifolio />
       <Footer />

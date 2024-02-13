@@ -23,6 +23,7 @@ const MobileHeader: React.FC = () => {
       <Menu statusVisible={isVisible}>
         <Text href='#about' onClick={() => setIsVisible(false)}>Sobre</Text>
         <Text href='#experience' onClick={() => setIsVisible(false)}>Experiência</Text>
+        <Text href='#tecnologies' onClick={() => setIsVisible(false)}>Stack</Text>
         <Text href='#portifolio' onClick={() => setIsVisible(false)}>Portifólio</Text>
         {/* <Text href='#banner'>Contato</Text> */}
       </Menu>

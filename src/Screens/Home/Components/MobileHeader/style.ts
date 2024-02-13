@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 import { width } from "../../../../Config";
 
-const windowWidth = window.innerWidth
-
 export const Container = styled.nav`
     width: 100%;
     background-color: transparent;
@@ -64,7 +62,7 @@ export const Menu = styled.nav<MenuProps>`
     }
    
 
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 15px 0px 0px 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
