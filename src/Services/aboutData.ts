@@ -1,0 +1,3 @@
+export const aboutData = {
+    description: "Sou estudante de Engenharia da Computação na Universidade do Estado do Rio de Janeiro. Amo aprender e trabalhar com tecnologia, principalmente no desenvolvimento de aplicativos e aplicações web. Também procuro estudar sobre backend, banco de dados, a fim de me tornar um desenvolvedor full stack. Busco vivenciar cada vez mais a área da tecnologia da informação e adoro conhecer inovações sobre esse assunto."
+}

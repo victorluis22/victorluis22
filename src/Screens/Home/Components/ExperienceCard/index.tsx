@@ -22,14 +22,17 @@ interface ExperienceCardProps{
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({image, role, institution, start, finish, description}) => {
-  
+
   return (
     <Container>
       <TimeLine>
         <TimeLineText>{start}</TimeLineText>
         <TimeLineText>{finish}</TimeLineText>
       </TimeLine>
-      <Content>
+      <Content
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
         <Image src={image} alt={role}/>
         <TextContainer>
           <Title>{role}</Title>

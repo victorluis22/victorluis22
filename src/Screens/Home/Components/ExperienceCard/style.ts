@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { width } from "../../../../Config";
 
+import { motion } from "framer-motion"
 
 export const Container = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ export const TimeLine = styled.div`
    border-right: 2px solid var(--light-black);
    width: 100px;
 
-   @media screen and (max-width: ${width.mobile}px) {    
+   @media screen and (max-width: ${width.largeMobile}px) {    
       display: none;
    }
 `;
@@ -29,15 +30,17 @@ export const TimeLineText = styled.span`
    font-weight: light;
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
    display: flex;
-   align-items: flex-start;
+   align-items: center;
+   justify-content: flex-start;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    border-radius: 5px;
    padding: 20px;
    flex-wrap: wrap;
    width: calc(100% - 100px);
-   @media screen and (max-width: ${width.mobile}px) {    
+   
+   @media screen and (max-width: ${width.largeMobile}px) {    
       width: 100%;
    }
 `;
@@ -70,7 +73,7 @@ export const SubTitle = styled.h3`
 export const Date = styled.h4`
    font-size: var(--small);
    display: none;
-   @media screen and (max-width: ${width.mobile}px) {    
+   @media screen and (max-width: ${width.largeMobile}px) {    
       display: block;
    }
 `;

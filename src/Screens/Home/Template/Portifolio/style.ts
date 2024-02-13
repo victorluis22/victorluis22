@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { width } from "../../../../Config";
 
 export const Container = styled.div`
-
+    
 `;
 
 export const Title = styled.h1`

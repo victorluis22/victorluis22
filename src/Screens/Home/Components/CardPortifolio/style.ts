@@ -79,7 +79,6 @@ export const LowerContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    
     flex-wrap: wrap;
 `;
 

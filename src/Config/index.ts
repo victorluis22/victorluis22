@@ -1,5 +1,6 @@
 export const width = {
     mobile: 390,
+    largeMobile: 590,
     tablet: 820,
     notebook: 1024,
     largeNotebook: 1440,
