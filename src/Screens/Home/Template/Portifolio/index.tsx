@@ -5,7 +5,7 @@ import {
 } from './style'
 
 import CardPortifolio from '../../Components/CardPortifolio'
-import { cardsData } from '../../../../Services/cardsData'
+import { portfolioData } from '../../../../Services/portfolioData'
 
 import Carousel  from 'react-bootstrap/Carousel'
 
@@ -17,14 +17,13 @@ const Portifolio: React.FC = () => {
       
       <Carousel>
         {
-            cardsData.map((card, index) =>{
+            portfolioData.map((card) =>{
               return(
-                <Carousel.Item>
+                <Carousel.Item key={card.id}>
                     <CardPortifolio
-                    key={index}
                     projectName={card.projectName}
-                    macImage={card.macImage}
-                    iPhoneImage={card.iPhoneImage}
+                    image1={card.image1}
+                    image2={card.image2}
                     description={card.description}
                     tecIcons={card.tecIcons}
                     tecIconsAlt={card.tecIconsAlt}

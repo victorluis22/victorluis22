@@ -10,14 +10,14 @@ export const Container = styled.div<ContainerProps>`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    height: 600px;
 
     ${({backgroundStyle}) => {
         return(backgroundStyle)
     }}
 
     @media screen and (max-width: ${width.mobile}px) {    
-        height: 700px;
+        height: 750px;
     }   
 `;
 
@@ -27,7 +27,7 @@ export const Card = styled.div`
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--max-width);
     padding: 30px;
 `;
 

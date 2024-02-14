@@ -15,7 +15,7 @@ const Tecnologies: React.FC = () => {
       <Title>Minha Stack</Title>
       <IconsContainer>
         {tecnologiesData.icons.map((eachIcons) => {
-          return <Icons src={eachIcons.src} alt={eachIcons.alt} />
+          return <Icons key={eachIcons.id} src={eachIcons.src} alt={eachIcons.alt} />
         })}
       </IconsContainer>
     </Container>

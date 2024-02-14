@@ -28,7 +28,7 @@ export const experienceData = [
         institution: 'Serra Hackclub',
         start: 'Ago 2022',
         finish: 'Fev 2024',
-        description: 'Faço parte de um grupo que compete em Hackatons de programação.'
+        description: 'Fiz parte de um grupo que compete em Hackatons de programação.'
     },
     {
         id: 3,
