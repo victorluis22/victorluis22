@@ -53,14 +53,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="cplusplus logo"  />
 </div>
 
-<h3 align="left">My Stats</h3>
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=victorluis22&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false" height="150" alt="stats graph"  />
-
-###
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=victorluis22" alt="victorluis22" /></a> </p>
-
 ###
 
 <h3 align="left">Contact Me</h3>
