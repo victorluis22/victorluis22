@@ -7,14 +7,6 @@
 </div>
 
 ###
-<p align="left">A Software Engineer student at Rio de Janeiro State University.</p>
-<h3 align="left">See my work</h3>
-
-<a href="https://victorluis22.github.io/victorluis22/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" height="30" alt="My Portfolio"
-</a>
-
-###
 
 <h3 align="left">My Stack</h3>
 <div align="left">
